@@ -74,6 +74,8 @@
         
           <li class="navbar-list-item"><a href="/links">友人帐</a></li>
         
+          <li class="navbar-list-item"><a href="/messages">留言板</a></li>
+        
           <li class="navbar-list-item"><a href="/about">自我介绍</a></li>
         
           <li class="navbar-list-item"><a href="/bangumis">我的追番</a></li>
@@ -141,7 +143,29 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <link rel="stylesheet" href="/css/bilicard.css" type="text/css">
+        <h3 id="为了考上那边的中学，打算以此作为我学下去的动力。所以在这段时间里，我打算规划好。"><a href="#为了考上那边的中学，打算以此作为我学下去的动力。所以在这段时间里，我打算规划好。" class="headerlink" title="为了考上那边的中学，打算以此作为我学下去的动力。所以在这段时间里，我打算规划好。"></a>为了考上那边的中学，打算以此作为我学下去的动力。所以在这段时间里，我打算规划好。</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><pre><code>1. 坚持早读
+2. 多做练习
+3. 巩固练习
+4. 拓展练习
+</code></pre>
+<h2 id="2022-x2F-6-x2F-18"><a href="#2022-x2F-6-x2F-18" class="headerlink" title="2022&#x2F;6&#x2F;18"></a>2022&#x2F;6&#x2F;18</h2><ul>
+<li><p>昨晚玩得太尽兴了，导致我半夜才睡。所以我又又又起迟了，上午10点多才醒的。<br>简单洗漱之后，我又来到了书桌前。本要早读的我，却打开了电脑看起了QQ(然而却没有人找我）。接着就刷起了b站……</p>
+</li>
+<li><p>到了中午，因为刚吃完了早餐，所以没有饥饿感，我索性不吃了。</p>
+</li>
+<li><p>下午，我的脑子终于好好谴责了我一顿，于是我这才打开抽屉，拿出那重如泰山的作业本。但过了一会儿又看向了电脑屏幕，决定要以这篇文章来激励我…</p>
+</li>
+<li><p>夜幕降临，又到了吃饭的时候，我早早就去到了厨房，等待着妈妈把饭煮好…<br>在等待的过程中，我也没闲着，拿出了数学卷子写（然而写着写着就看起了电视）。</p>
+</li>
+<li><p>吃晚饭的时候，我还是不能专心，又打开了电视刷起了b站…<br>因为我今天决定早点睡，所以意识到快到睡觉时间的我，赶忙来到我房间，写完了这篇日记。</p>
+</li>
+<li><p>今天发现了一首好听的歌——poker face（其实是因为学校要开什么课后服务展示会，然后老师让我们上台走秀于是让我挑选好听一点的音乐…）我是真的不想走秀啊！！！还什么美好回忆，那应该是社死回忆吧…我能想到以后在月黑风高的夜晚，社死的回忆突然攻击我….</p>
+</li>
+<li><p>我想到了解决办法，就是那天我要装病，请假！！！！！</p>
+</li>
+</ul>
+<div class="aplayer-box" data-url='https://win-web-ra01-sycdn.kuwo.cn/92dd28536015de527ffd499eb471aea4/62adcc80/resource/n3/320/96/85/1172766120.mp3' data-name='Poker Face' data-artist='Lady Gaga' data-cover='https://file-sh.beaa.cn/2022/06/18/62adcd04eb43e.jpg' data-lrc='http://124.222.177.198:5212/api/v3/file/get/2/8lrc.comPoker%20Face.lrc?sign' data-lrcType='3' ></div>
+<link rel="stylesheet" href="/css/bilicard.css" type="text/css">
       </section>
 
       
@@ -824,6 +848,34 @@ LTA1LTE0VDE3OjA0OjMxKzAzOjAw7Vb5XQAAAABJRU5ErkJggg==" />
 
   
   <!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: true,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
 
 
 <!-- dplayer -->
