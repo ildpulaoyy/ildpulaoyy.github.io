@@ -47,7 +47,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://cdn.339688.xyz/2022/07/21/62d96791b3ca5.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://file-sh.beaa.cn/2022/07/21/62d96414872cc.jpg)"></div>
   
 
   <!-- navbar -->
@@ -112,8 +112,14 @@
           </h2>
           <ul class="wrap-list dark">
   
+    <li><a href="/categories/riji3711%E7%9A%84%E5%A6%99%E6%83%B3/">📒 riji3711的妙想</a></li>
+  
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%97%A5%E5%B8%B8/">🏷️ 日常</a></li>
+  
+    <li><a href="/tags/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/">🏷️ 奇思妙想</a></li>
   
 </ul>
         </div>
@@ -291,7 +297,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/riji3711%E7%9A%84%E5%A6%99%E6%83%B3/">
-            riji3711的妙想 (3)
+            riji3711的妙想 (4)
           </a>
         </li>
       
@@ -852,6 +858,34 @@ LTA1LTE0VDE3OjA0OjMxKzAzOjAw7Vb5XQAAAABJRU5ErkJggg==" />
 
   
   <!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: true,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
 
 
 <!-- dplayer -->
